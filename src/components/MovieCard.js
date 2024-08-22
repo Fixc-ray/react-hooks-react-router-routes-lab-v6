@@ -5,7 +5,7 @@ function MovieCard({ title, id }) {
   return (
     <div>
         <h2>{title}</h2>
-        <Link to= {`/movie/${id}`}>
+        <Link to= {`/movies/${id}`}>
           View Info
         </Link>
     </div>

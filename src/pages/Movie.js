@@ -7,14 +7,10 @@ function Movie() {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`http://localhost:3000/movies/${id}`)
-      .then((response) => response.json())
+    fetch(`http://localhost:4000/movies/${id}`)
+      .then((res) => res.json())
       .then((movie) => setMovie(movie))
   }, [id]);
-
-  // if(!movie.title){
-  //   return <h1>Loading...</h1>
-  // }
 
   return (
     <div> 
